@@ -1,0 +1,455 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+      font-family: "Montserrat", sans-serif;
+}
+
+
+/*Estilos para la seccion enacbezado (logo-menu)*/
+.content_logoMenu{
+    background-color: #212121;
+
+    width: 100vw;
+    height: 10vh;
+    padding: 30px 10px 0 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.logo h2{
+    margin-left: 1.5em;
+}
+
+
+
+.content_logoMenu h2{
+    color:white;
+    font-size: 2em;
+}
+
+.content_logoMenu span{
+    color: #f4d03f;
+}
+
+
+.content_menu{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*estilos para barra de navegacion*/
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+ul{
+    width: 95%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+ul li{
+    list-style: none;
+      
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    padding: 10px 20px;
+   }
+
+   nav ul li a:hover{
+    background-color: #f4d03f;
+    color: #191c32;
+   }
+   
+.content_menu .active{
+    color: #f4d03f;
+}
+
+.content_menu .active:hover{
+    color: #191c32;
+}
+
+/*estilos para seccon de informacion intro*/
+.content_intro{
+    background-color: #212121;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+
+}
+
+.content_text_description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 90vh;
+   
+
+}
+
+.content_elementos_info{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content_intro h2{
+    font-size: 2.5em;
+    color: white;
+    
+}
+
+.content_intro .content_text_description span{
+    color:#f4d03f ;
+}
+
+
+.content_intro p{
+    color: white;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+
+.estiloBoton {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    width: 25%;
+    background-color: #f4d03f;
+}
+
+.estiloBoton a{
+   text-decoration: none;
+}
+
+/*Estilos para el contenedor de la imagen*/
+
+.content_img{
+
+    width: 40%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+ 
+}
+
+.content_img img{
+
+    width: 400px;
+    height: 440px;
+}
+
+/*estilo segunda seccion acerca de mi*/
+
+.seccion_acerca{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+}
+
+/*.content_intro .content_img img{
+    width: 200px;
+}*/
+
+
+/*.content_img{
+    background-image: url(../img/avatar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}*/
+
+.content_img_acerca{
+    background-color: aliceblue;
+    grid-column: 1/5;
+    height: 100vh;
+}
+
+
+
+
+.content_img_acerca img{
+    width: 100%;
+    height: 100%;
+}
+
+.texto_acerca{
+    grid-column: 5/11;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4em;
+}
+
+.texto_acerca p{
+    margin: 1.5em 0;
+}
+
+/*Estilos para Contenido para la galeria*/
+
+
+
+.portafolio{
+    background-color:#212121 ;
+    width: 100vw;
+
+    height: 100vh;
+ 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.portafolio h2{
+    color: white;
+    font-size: 2.8em;
+    width:70%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.content_card .card .estiloBoton{
+    background-color: #a68e2f;
+}
+
+.titulo_portafolio{
+    height: 10vh;
+    margin-top: 1.5em;
+
+}
+
+.content_card{
+
+    width: 70vw;
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+   background-color:#f4d03f;
+   display: flex;
+   padding-bottom: 1em;
+   flex-direction: column;
+   height: 400px;
+   align-items: center;
+}
+
+
+.content_card_img{
+    background-image: url(../img/developer.jpg);
+    background-size: cover;
+    width: 100%;
+    height:220px;
+    margin-bottom: 0.5em;
+}
+
+.card .titulo_desc{
+    font-size: 1.3em;
+    text-align: center;
+
+    padding: .5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #212121;
+ 
+}
+
+.content_icons{
+    font-size: 1.3em;
+    padding: 1em 0;
+    color: #212121;
+    margin-bottom: 0.5em;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card .estiloBoton{
+    width: 70%;
+    background-color: #f4d03f;
+}
+
+.card .estiloBoton a{
+    color: #212121;
+}
+
+.form{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #212121;
+    padding-top: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form .titulo_contacto{
+    color: white;
+
+    width: 70%;
+    font-size: 2.8em;
+    height: 10vh;
+}
+
+.content_formulario{
+
+    width: 70%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255, .3);
+    
+}
+
+.content_formulario h3{
+    color: white;
+}
+
+.content_formulario > * {
+    padding: 1.7em;
+}
+
+.content_right_form{
+    grid-column:1/3 ;
+    background-color: rgb(83, 73, 73);
+    height: 100%;
+}
+
+.content_left_form{
+    grid-column: 3/4;
+    background-color: rgb(27, 27, 27);
+    height:100% ;
+    color: rgb(129, 129, 129);
+}
+
+
+h3{
+
+text-align: center;
+padding: 1em 0;
+font-size: 1.5em;
+}
+.content_right_form form p{
+    margin-top: 1rem;
+    color: white;
+}
+
+.content_right_form form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.content_right_form form .block{
+    grid-column: 1/3;
+}
+
+.content_right_form form p{
+    padding: 1em;
+}
+
+.content_right_form form button,
+.content_right_form form input,
+.content_right_form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #f4d03f;
+    outline: 0;
+}
+
+.content_formulario .content_right_form button{
+    background-color:#f4d03f;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1.1em;
+    cursor: pointer;
+}
+
+
+.contenedor_icon_right{
+    padding: 2em 0;
+}
+
+
+.icon_right_content{
+    display: flex;
+    padding: 1em 0;
+}
+
+
+.icon_right_content  p{
+    margin-left: 1.6em;
+}
+
+.footer{
+    background-color: #f4d03f;
+    width: 100vw;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content h2{
+    font-size: 3em;
+
+}
+
+
+.footer_content h5{
+    font-size: 1em;
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    margin-top: 1em;
+}
